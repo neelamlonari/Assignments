@@ -11,7 +11,9 @@ for(let i=1; i<=20;i++){
  
    }}
     console.log(x);
-    /////////fizzbuzz///////
+    /////////
+    /////fizzbuzz
+    ///////
  let x="";
 for( let i = 1; i<=30;i++ ) {
   
@@ -27,7 +29,7 @@ for( let i = 1; i<=30;i++ ) {
   }
 
   }
-  console.log(x);*/
+  console.log(x);
   ///////////wild life/////
 class Wildlife{
   costructor(name,species ,age, hometown){
@@ -50,6 +52,15 @@ console.log(wolfy);
 dart.push("Hawkins");
 console.log(dart);
 wolfy[0]= "Gameboy";
-console.log(wolfy) ;
+console.log(wolfy) ;*/
+///////////////Yell at the Ninja Turtles////////////
+const ninjaturtles = ["Donatello", "Leonardo", "Raphael"," Michaelangelo"];
+
+let text="";
+for( let x of ninjaturtles){
+  //let x=0;
+  text+= x + ",";
+}
+console.log(text.toUpperCase());
 
   
