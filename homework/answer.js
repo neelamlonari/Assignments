@@ -52,7 +52,7 @@ console.log(wolfy);
 dart.push("Hawkins");
 console.log(dart);
 wolfy[0]= "Gameboy";
-console.log(wolfy) ;*/
+console.log(wolfy) ;
 ///////////////Yell at the Ninja Turtles////////////
 const ninjaturtles = ["Donatello", "Leonardo", "Raphael"," Michaelangelo"];
 
@@ -61,6 +61,29 @@ for( let x of ninjaturtles){
   //let x=0;
   text+= x + ",";
 }
-console.log(text.toUpperCase());
+console.log(text.toUpperCase());*/
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+console.log(favMovies.indexOf("Titanic"));
+favMovies.sort();
+console.log("After sorted="+favMovies);
+console.log(" Ppped element="+favMovies.pop());
+console.log("Array after popping="+favMovies);
+  favMovies.push("Guardians of the Galaxy");
+  console.log(favMovies);
+  console.log(favMovies.reverse());
+ // console.log(favMovies.shift());
+ console.log(favMovies.unshift("Cindrella"));
+ console.log(favMovies.indexOf("Django Unchained"));
+  console.log(favMovies);
+ favMovies.splice(14,1, "Avatar");
+ console.log(favMovies);
+console.log( favMovies.length/2);
+let slicedfavMovies =favMovies.slice(favMovies.length/2);
+console.log(favMovies);
+console.log(" sliced movies ="+slicedfavMovies);
+console.log(favMovies.indexOf( "Fast and Furious"));
+console.log(favMovies.indexOf("hcdkc"));
+//favMovies= ["a","c","b"];///const variable value cannot be changed however values inside of array can be changed//
 
-  
+
+
