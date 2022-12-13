@@ -1,35 +1,35 @@
 
-/*let x=" ";
+let x=" ";
 for(let i=1; i<=20;i++){
     x = x + (i).toString() + ",";
   }  console.log(x);
 
-  let x=" ";
+  let y=" ";
   for( let i=1;i<=200;i++){
     if(i%2==0){
-    x= x + (i).toString() + "," ;
+    y= y + (i).toString() + "," ;
  
    }}
-    console.log(x);
+    console.log(y);
     /////////
     /////fizzbuzz
     ///////
- let x="";
+ let a="";
 for( let i = 1; i<=30;i++ ) {
   
   
    if( i % 3===0 && i % 5===0){
-    x=x+"fizzbuzz,";
+    a=a+"fizzbuzz,";
    }else if( i%3===0){
-    x=x+"fizz";
+    a=a+"fizz";
    }else if (i%5===0){
-    x=x+"buzz,";
+    a=a+"buzz,";
    }else{
-    x = x + i+",";
+    a = a + i+",";
   }
 
   }
-  console.log(x);
+  console.log(a);
   ///////////wild life/////
 class Wildlife{
   costructor(name,species ,age, hometown){
@@ -61,7 +61,7 @@ for( let x of ninjaturtles){
   //let x=0;
   text+= x + ",";
 }
-console.log(text.toUpperCase());*/
+console.log(text.toUpperCase());
 const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 console.log(favMovies.indexOf("Titanic"));
 favMovies.sort();
@@ -84,6 +84,25 @@ console.log(" sliced movies ="+slicedfavMovies);
 console.log(favMovies.indexOf( "Fast and Furious"));
 console.log(favMovies.indexOf("hcdkc"));
 //favMovies= ["a","c","b"];///const variable value cannot be changed however values inside of array can be changed//
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+
+
+
+const removed=whereIsWaldo.splice(1,1);
+console.log("removed==="+removed);
+
+console.log(whereIsWaldo);
+whereIsWaldo[1].splice(2,1,"No One");
+console.log(whereIsWaldo);
+console.log(whereIsWaldo[2][1][1]);
+
+
+
+
+
+
 
 
 
