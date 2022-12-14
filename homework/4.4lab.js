@@ -96,7 +96,7 @@ Set Gus's owner to the string "Timmy"
 Have Timmy "buy" Gus
 Age Timmy 15 years
 Have Timmy eat twice
-Have Timmy exercise twice*/
+Have Timmy exercise twice
 const timmy = new Person("Timmy");
 console.log("timmy got 1 year old"+" " +timmy.ageUp());
 console.log(timmy.greet(timmy));
@@ -144,8 +144,71 @@ console.log("timmy " +" "+timmy.eat());
 console.log(timmy);
 console.log("timmy exercised "+timmy.exercise());
 console.log("timmy exercised "+timmy.exercise());
-console.log(timmy);
+console.log(timmy);*/
+const timmy = new Person('Timmy')
+for(let i =0; i < 5; i++){
+  timmy.ageUp()
+}
+for(let i =0; i < 5; i++){
+  timmy.eat()
+}
+for(let i =0; i < 5; i++){
+  timmy.exercise()
+}
+for(let i =0; i < 9; i++){
+  timmy.ageUp()
+}
+const gus = new Hamster('Gus')
+gus.owner = 'Timmy'
+timmy.buyHamster(gus)
 
+for(let i =0; i < 15; i++){
+  timmy.ageUp()
+}
+timmy.eat()
+timmy.eat()
+timmy.exercise()
+timmy.exercise()
+///////////////////////////
+//Chef dinner program//
+/////////////////////////////
+class Dinner {
+    constructor( appetizer, entree , dessert){
+        this.appetizer= appetizer;
+        this.entree=entree;
+        this.dessert=dessert;
+    }
+}
+
+
+class Chef extends Dinner {
+    constructor(appetizer,entree,dessert,soup){
+        super(appetizer,entree,dessert);
+        this.soup=soup;
+
+    }
+    
+    veg(){
+        return `Our ${this.appetizer} , ${this.dessert}, ${this.entree}  with complementary Drink.`;
+    }
+    Nonveg(){
+        return `Specialised ${this.appetizer},${this.entree} or ${this.dessert} with SoftDrink`;
+    }
+    italian(){
+        return `Our ${this.appetizer} , ${this.dessert},${this.entree} with breadsticks `;
+    }
+    lunch(soup){
+        return ` special lunch serves ${this.soup}`;
+    }
+}
+
+const roy = new Chef ('Macroni & Cheeze', 'Chicken Marsalla','Chocolate lava cake','veg soup');
+const rajeev = new Chef ( 'Fench Fries','Fettucine Alfreddo','cheery Pie','chicken soup');
+ const bryan = new Chef ( 'Minnestrone Soup','five cheese Pizza','Lemon roll','crab soup');
+console.log(roy.veg());
+console.log(rajeev.italian());
+ console.log(roy.lunch());
+ console.log(bryan.Nonveg());
 
 
 
