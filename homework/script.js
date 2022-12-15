@@ -315,7 +315,13 @@ const cat2 = {
     age : 4
 }
 function combineCats(mama,papa){
-    console.log((cat1.name+cat1.age+cat1.breed),(cat2.name+cat2.age+cat2.breed));
+    console.log((mama.name+mama.age+mama.breed),(papa.name+papa.age+papa.breed));
+    const cat3 ={
+        name: mama.name+papa.name,
+        breed: mama.breed+'-' +papa.breed,
+        age: 1
+    }
+    return cat3;
 }
 combineCats(cat1,cat2);
 combineCats({ name: "Craig", age: 20, breed: "unknown" }, { name: "Linda", age: 20, breed: "undefined" });
